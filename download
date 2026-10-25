@@ -1,2 +1,7 @@
-# No direct web access
-Require all denied
+# secrets and runtime files
+inc/config.php
+storage/logs/*
+!storage/logs/.gitkeep
+# photos uploaded through the admin panel (random 24-char names)
+assets/img/holiday-homes/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].*
+.DS_Store
